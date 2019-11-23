@@ -29,6 +29,6 @@ and WinCSP FTP client for managing files on server
 
 
 
-### [Click this link to see this project in browser](https://semenbakhtin.github.io/Personal-page/)
+### Click this [link to see this project in browser](https://semenbakhtin.github.io/Personal-page/)
 
-## Or test real working page on [semenbakhtin.ru](https://semenbakhtin.ru)
+### Or test real working page on [semenbakhtin.ru](https://semenbakhtin.ru)
