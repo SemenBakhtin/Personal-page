@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'PT Sans', sans-serif;
+background-color: #ccffff;
+}
+
+/* ------- Main info ------ */
+.card {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 967px;
+background-color: #fff;
+border-radius: 8px;
+padding-top: 60px;
+padding-right: 71px;
+padding-bottom: 40px;
+padding-left: 70px;
+}
+
+/* ----------- IMG (left side) ------------ */
+.card-img-wrapper {
+float: left;
+width: 371px;
+}
+
+/* --------------- Content (right side) ------------- */
+.card-content-wrapper {
+margin-top: 9px;
+float: right;
+width: 425px;
+}
+
+.card-label-book {
+margin-bottom: 7px;
+font-size: 18px;
+font-family: 'Noto Serif', serif;
+font-weight: 700;
+color: #cccccc;
+}
+
+.card-label-price {
+margin-bottom: 4px;
+font-size: 18px;
+font-family: 'Noto Serif', serif;
+font-weight: 700;
+color: #cccccc;
+}
+
+.card-title {
+line-height: 1.2;
+font-family: 'Noto Serif', serif;
+font-weight: 700;
+font-size: 38px;
+color: #0099cc;
+}
+
+.card-ditails-wrapper {
+font-family: 'PT Sans', sans-serif;
+margin-top: 23px;
+line-height: 1.2;   
+}
+
+.card-ditails-wrapper:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.card-text {
+font-size: 15px;
+font-weight: 400;
+}
+
+p {
+margin-top: 12px;
+margin-bottom: 15px;
+}
+
+.card-price {
+margin-left: -2px;
+font-size: 28px;
+font-weight: 700;
+}
+
+.card-button-primary {
+float: left;
+margin-top: 23px;
+margin-bottom: 10px;
+background-color: #cc0033;
+line-height: 1;
+font-size: 24px;
+border-radius: 5px;
+padding-top: 15px;
+padding-right: 35px;
+padding-bottom: 16px;
+padding-left: 33px;
+color: #fff;
+font-weight: 700;
+}
+
+/* ======================= THE END ======================== */
+

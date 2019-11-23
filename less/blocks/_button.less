@@ -1,0 +1,40 @@
+.button {
+	display: inline-block;
+	
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+	
+	box-shadow: 2px 3px 15px rgba(0, 82, 194, 0.5);
+	padding: 11px 14px 14px;
+	background-color: @blueHeading;
+	border-radius: 60px;
+	transition: all .2s ease-in;
+	
+	.fa {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+
+	a {
+    color: #fff;
+	text-decoration: none;
+	padding-top:12px;
+	padding-bottom: 15px;
+	padding-right: 8px;
+	padding-left: 8px;
+	}
+	
+	&:hover, &:focus {
+    background-color: #fff;
+    color: @blueHeading;
+  }
+
+  &:hover a, &:focus a {
+    color: @blueHeading;
+  }
+
+  &:active, &:active a {
+    color: @yellow;
+  }
+}

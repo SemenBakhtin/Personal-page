@@ -1,0 +1,88 @@
+.footer {
+    background-color: @graybackground;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+
+    @media (min-width:576px) {
+        text-align: left;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        list-style-type: none;
+        padding-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #8992b0;
+        font-size: 13px;
+        opacity: 0.8;
+
+        &:hover, &:active, &:focus {
+            opacity:1;
+            transition: 0.2s ease-in;
+        }
+    }
+
+    .footer__logo-title {
+        margin: 0;
+        padding-bottom: 14px;
+        font-weight: 700;
+        font-size: 20px;
+        color: @highlitedprice;
+    }
+
+    .footer__logo-description {
+
+        font-size: 14px;
+        font-weight: 400;
+        color: #8992b0;
+    }
+
+    .footer__menu-title {
+        font-weight: 700;
+        font-size: 16px;
+        color: @highlitedprice;  
+        text-transform: uppercase;
+    }
+
+    .footer__button {
+       width: 100%;
+       font-size: 11px;
+       font-weight: 400; 
+       margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 8px;
+    }
+
+}
+
+.footer__social-icons {
+margin-top: 15px;    
+}
+
+.footer__copiright {
+ padding-left: 10px;
+ margin-top: 10px;
+ font-size: 14px;
+ font-weight: 400;
+ color: #64759f;
+ opacity: 0.3;
+
+    @media (min-width:576px){
+        margin-top: 30px;
+    }
+}
+
+.footer__lower {
+    justify-content: space-between;
+    border-top: 1px dotted #495479;
+    margin-bottom: 10px;
+}
