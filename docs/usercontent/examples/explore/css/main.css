@@ -106,12 +106,12 @@ body {
     top: 50%;
   }
 }
-.header__content-tittle h1 {
+.header__content-title h1 {
   font-weight: 900;
   font-size: 50px;
   color: #33ccff;
 }
-.header__content-subtittle {
+.header__content-subtitle {
   margin-bottom: 28px;
   font-weight: 400;
   font-size: 23px;
@@ -150,7 +150,7 @@ body {
 .product-block__card-content {
   padding: 15px;
 }
-.product-block__card-tittle h3 {
+.product-block__card-title h3 {
   margin: 0;
   padding-bottom: 15px;
   color: #495479;
@@ -802,17 +802,6 @@ h1 {
     display: none;
   }
 }
-.navigation__toggle-button:before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  width: 25px;
-  height: 20px;
-  background: url('../img/icons/navigation-icon.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 .navigation__toggle-button--active {
   display: block;
   padding-top: 10px;
@@ -832,12 +821,29 @@ h1 {
     display: none;
   }
 }
+.navigation-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .navigation-list {
+    width: auto;
+    justify-content: space-between;
+  }
+}
 .navigation-list ul {
   display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
   padding-bottom: 2rem;
+  width: 100%;
+}
+.navigation-list ul:hover,
+.navigation-list ul:focus {
+  color: #495479;
+  transition: 0.2s ease-in;
 }
 @media (min-width: 992px) {
   .navigation-list ul {
@@ -917,4 +923,52 @@ h1 {
   position: absolute;
   right: 5%;
   top: 25%;
+}
+.menu-link {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 20px 20px 20px 20px;
+  display: block;
+  float: right;
+}
+@media (min-width: 992px) {
+  .menu-link {
+    display: none;
+  }
+}
+.menu-link span {
+  display: block;
+  height: 2px;
+  width: 32px;
+  background: #fff;
+  margin: 5px 0;
+  transition: transform 0.1s linear;
+}
+.menu-link:hover,
+.menu-link:focus {
+  outline: none;
+}
+.menu-link:hover .line-1,
+.menu-link:focus .line-1 {
+  transform: translateY(-2px);
+}
+.menu-link:hover .line-3,
+.menu-link:focus .line-3 {
+  transform: translateY(2px);
+}
+.menu-link.active {
+  outline: none;
+}
+.menu-link.active span {
+  transition: transform 0.2s ease-out, opacity 0.1s linear;
+}
+.menu-link.active .line-1 {
+  transform: translateY(7px) translateX(0) rotate(45deg);
+}
+.menu-link.active .line-2 {
+  opacity: 0;
+}
+.menu-link.active .line-3 {
+  transform: translateY(-7px) translateX(0) rotate(-45deg);
 }

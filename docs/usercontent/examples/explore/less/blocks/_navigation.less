@@ -61,17 +61,17 @@
     }
 	cursor: pointer;
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 20px;
-		right: 15px;
-		width: 25px;
-		height: 20px;
-		background: url('../img/icons/navigation-icon.png');
-		background-repeat: no-repeat;
-		background-position: 0 0;
-	}
+	// &:before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 20px;
+	// 	right: 15px;
+	// 	width: 25px;
+	// 	height: 20px;
+	// 	background: url('../img/icons/navigation-icon.png');
+	// 	background-repeat: no-repeat;
+	// 	background-position: 0 0;
+	// }
 	
 	padding-top: 10px;
     padding-bottom: 15px;
@@ -102,19 +102,32 @@
 }
 
 .navigation-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+        @media (min-width:992px) {
+            width: auto;
+            justify-content: space-between;
+        }
+
     ul {
         display: none;
         margin: 0;
         padding: 0;
         list-style-type: none;
         padding-bottom: 2rem;
-       
+        width: 100%;
+
+            &:hover, &:focus {
+                color: @cardtext;
+                transition: 0.2s ease-in;
+            }
 
             @media (min-width:992px) {
                margin-bottom: 0;
                display: flex;
-               padding: 15px; 
-              
+               padding: 15px;  
             }
 
         li {
